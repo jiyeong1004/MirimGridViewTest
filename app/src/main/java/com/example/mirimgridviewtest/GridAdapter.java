@@ -8,10 +8,8 @@ import android.widget.GridView;
 import android.widget.ImageView;
 
 public class GridAdapter extends BaseAdapter {
-
-    public GridAdapter(Context c){
         Context context;
-        int[] context;
+
         int[] imgRes = {R.drawable.m1, R.drawable.m2, R.drawable.m3, R.drawable.m4, R.drawable.m5,
                 R.drawable.m6, R.drawable.m7, R.drawable.m8, R.drawable.m9, R.drawable.m10,
                 R.drawable.m11, R.drawable.m12, R.drawable.m13, R.drawable.m14, R.drawable.m15,
@@ -19,11 +17,10 @@ public class GridAdapter extends BaseAdapter {
         public GridAdapter(Context context){
             this.context = context;
         }
-    }
 
     @Override
     public int getCount() {
-        return 0;
+        return imgRes.length;
     }
 
     @Override
